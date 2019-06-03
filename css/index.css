@@ -71,9 +71,10 @@ h1, h2, h3, h4, h5 {
 	line-height: 1;
 } */
 
-/* .wholePage{
-    max-width: 800px;
-} */
+.wholePage{
+    box-sizing: border-box;
+}
+
 
 
 
@@ -104,6 +105,15 @@ img{
 	text-align: center;
     padding-top: 10px;
    
+}
+
+
+@media(max-width: 800px){
+    .navigation{
+        align-items: baseline;;
+        width: 80%;
+        
+    }
 }
 
 @media(max-width: 600px){
@@ -155,7 +165,7 @@ img{
 
 @media (max-width: 600px){
     .container{
-        width: 550px;
+        width: 450px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -302,6 +312,7 @@ h1 {
     margin-right: 10px;
     margin-left: 8%;
     height: auto;
+    padding-bottom: 35px;
 }
 
 @media (max-width: 600px){
@@ -310,7 +321,6 @@ h1 {
         width: 100%;
         float: left;
         margin-left: 0px;
-
     }
 }
 
@@ -319,6 +329,7 @@ h1 {
     float: left;
     height: auto;
     margin-left: 20px;
+    padding-bottom: 35px;
 }
 
 @media (max-width: 600px){
@@ -336,7 +347,8 @@ h1 {
     float: right;
     margin-left: 10px;
     margin-right: 10%;
-    height: auto;@
+    height: auto;
+    padding-bottom: 35px;
 }
 
 @media (max-width: 600px){
@@ -371,7 +383,9 @@ h1 {
 
 @media(max-width 600px){
     .notes{
-        flex-direction: row;
+        align-content: left;
+        align-items: left;
+        display: flex-start;
     }
 }
 
